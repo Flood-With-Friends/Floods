@@ -1,8 +1,4 @@
-.example-fill-remaining-space {
-  flex: 1 1 auto;
-}
-
-#footer {
+footer {
   flex-direction: row;
   justify-content: space-around;
   position: fixed;
@@ -14,25 +10,25 @@
   z-index: 1000;
 }
 
-p {
-  font-size: .7rem;
-  margin-top: -1.5rem;
-  color: #BBDEFB;
-}
+.nav {
+  height: 5.6rem;
 
-button.nav-button {
-  background-color: transparent;
-  padding: 0;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
+  &__link {
+    outline: none;
+    color: #90CAF9;
 
-.material-icons.md-48 {
-  color: #BBDEFB;
-  font-size: 2.4rem;
-  padding-top: 2rem;
-}
+    &:active {
+      color: #BBDEFB;
+    }
 
-a {
-  text-decoration: none;
+    &--icon {
+      font-size: 2.4rem;
+      padding-top: 1rem;
+    }
+
+    &--text {
+      font-size: .7rem;
+      margin-top: -1.5rem;
+    }
+  }
 }

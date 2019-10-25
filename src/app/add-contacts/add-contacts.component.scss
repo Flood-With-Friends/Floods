@@ -1,3 +1,19 @@
-.contact-input {
-  width: 100%
+.section-add-contacts {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+  &__header {
+    padding-top: 2rem;
+    padding-left: 0;
+
+    &--text {
+      border-bottom: 1px solid #777;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__contact-input {
+    width: 100%
+  }
 }
