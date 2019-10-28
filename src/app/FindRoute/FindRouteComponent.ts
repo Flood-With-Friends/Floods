@@ -1,4 +1,12 @@
-import { Component, ViewChild, OnInit, ElementRef, EventEmitter, Output, AfterViewInit } from "@angular/core";
+import {
+  Component,
+  ViewChild,
+  OnInit,
+  ElementRef,
+  EventEmitter,
+  Output,
+  AfterViewInit
+} from "@angular/core";
 import { HttpService } from "../http.service";
 import { Observable } from "rxjs";
 import { UserLocationService } from "../services/user-location.service";
@@ -10,11 +18,10 @@ import { AutoSearchComponent } from "../auto-search/auto-search.component";
 
 @Component({
   selector: "find-route",
-  styles: ["agm-map { height: 40vh;}"],
+  styleUrls: ["./find-route-component.scss"],
   templateUrl: "./FindRoute.html"
 })
 export class FindRoute implements OnInit {
-
   @ViewChild(AutoSearchComponent, { static: true }) autoSearch;
 
   lat;

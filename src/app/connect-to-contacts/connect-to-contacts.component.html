@@ -1,32 +1,48 @@
-<div class="container">
-  <div class="row">
+<div class="row section-connect-contacts">
+  <div class="section-connect-contacts__header">
     <h1 mat-headline>Contact friends</h1>
     <p class="mat-body-1">Choose a scenario below and we'll get you in touch with your emergency contacts.</p>
     <button mat-stroked-button color="primary" routerLink="/add-contacts">EDIT CONTACTS</button>
   </div>
   <mat-divider></mat-divider>
-  <div class="row home-section" routerLink="/safe-moving">
-    <button mat-fab color="primary"><i class="material-icons ">
-        message
-      </i></button>
-    <h2 mat-headline class="home-header">I'm safe, and I'm moving.</h2><br>
-    <!-- <p class="mat-body-1">Give us a destination and we’ll give you a route around potential flooding.
-    </p> -->
+  <div class="mat-elevation-z2 section-connect-contacts__body" routerLink="/safe-moving">
+    <div class="col-1-of-4">
+      <button mat-fab color="primary">
+        <mat-icon>message</mat-icon>
+      </button>
+    </div>
+    <div class="col-3-of-4 section-connect-contacts__body--head">
+      <h1 mat-headline>I'm safe, and I'm moving.</h1>
+    </div>
   </div>
 
-  <div class="row home-section" routerLink="/stranded-okay">
-    <button mat-fab color="primary"><i class="material-icons">
-        message
-      </i></button>
-    <h2 mat-headline class="home-header">I'm stranded, but I'm okay.</h2><br>
+  <div class="mat-elevation-z2 section-connect-contacts__body" routerLink="/stranded-okay">
+    <div class="col-1-of-4">
+
+      <button mat-fab color="primary">
+        <mat-icon>
+          message
+        </mat-icon>
+      </button>
+    </div>
+    <div class="col-3-of-4">
+      <h1 mat-headline class="section-connect-contacts__body--head">I'm stranded, but I'm okay.</h1>
+    </div>
 
   </div>
-  <div class="row home-section" routerLink="/need-help">
-    <button mat-fab color="warn"><i class="material-icons">
-        message
-      </i></button>
-    <h2 mat-headline class="home-header">I'm stranded, and I need help.</h2><br>
+  <div class="mat-elevation-z2 section-connect-contacts__body" routerLink="/need-help">
+    <div class="col-1-of-4">
+      <button mat-fab color="warn">
+        <mat-icon>
+          message
+        </mat-icon>
+      </button>
+    </div>
+    <div class="col-3-of-4">
+      <h1 mat-headline class="section-connect-contacts__body--head">I'm stranded, and I need help.</h1>
+    </div>
   </div>
+  <div class="u-vertical-filler"></div>
 </div>
 
 <!-- <div class="container">

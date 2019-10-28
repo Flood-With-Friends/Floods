@@ -1,70 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-$color-primary: #2196F3;
-$color-secondary: #0D47A1;
-$color-accent: #2196F3;
+@import './styles/abstracts/variables';
+@import './styles/abstracts/mixins';
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import './styles/base/base';
+@import './styles/base/typography';
+@import './styles/base/utilities';
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  line-height: 1.7;
-  box-sizing: border-box;
-  background-color: #E3F2FD;
-}
-
-p {
-  font-size: 1.6rem
-}
-
-.example-fill-remaining-space {
-  /* This fills the remaining space, by using flexbox. 
-     Every toolbar row uses a flexbox row layout. */
-  flex: 1 1 auto;
-}
-
-
-.header-nav {
-  background-color: #2196F3;
-  color: white;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.user-message {
-  font-size: 1.6rem;
-  line-height: 1.7;
-}
-
-.helper-text {
-  font-size: 1.2rem;
-}
-
-mat-form-field.mat-form-field {
-  font-size: 1.6rem;
-}
-
-.search-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.search-box>* {
-  width: 100%;
-}
-
-.report-card {
-  max-width: 600px;
-  margin: auto;
-}
+@import './styles/layout/grid';

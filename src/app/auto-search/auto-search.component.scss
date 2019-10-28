@@ -1,0 +1,13 @@
+.search-box {
+  display: flex;
+  flex-direction: column;
+
+  &>* {
+    width: 100%
+  }
+}
+
+
+mat-form-field.mat-form-field {
+  font-size: 1.6rem;
+}

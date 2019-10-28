@@ -1,29 +1,23 @@
-<div class="container">
-  <div class="row">
-    <div class="col mt-4">
-      <h1 mat-headline>I'm stranded, but I'm okay.</h1>
-    </div>
+<div class="row stranded-okay">
+  <div class="stranded-okay__header">
+    <h1 mat-headline>I'm stranded, but I'm okay.</h1>
   </div>
   <hr>
-  <div class="row">
-    <div class="col">
-      <form>
-        <div class="form-group">
-          <label for="message" class="bmd-label-floating">Message</label>
-          <textarea class="form-control user-message" id="message" rows="3"
-            (change)="handleInput($event)">{{message}}</textarea>
-          <span>
-            <p class="mat-caption mt-3">Click the message to edit. We'll send it, along with your route, to your
-              contacts.</p>
-          </span>
-          <mat-divider></mat-divider>
+  <div class="stranded-okay__msg">
+    <form>
+      <div class="form-group">
+        <label for="message" class="bmd-label-floating">Message</label>
+        <textarea class="form-control user-message" id="message" rows="3"
+          (change)="handleInput($event)">{{message}}</textarea>
+        <p class="mat-caption mt-3">Click the message to edit. We'll send it, along with your route, to your
+          contacts.</p>
+        <mat-divider></mat-divider>
 
-          <div class="float-right mt-3">
-            <button mat-button [routerLink]="['/connect-contacts']">Cancel</button>
-            <button type="submit" mat-raised-button color="primary" (click)="sendMessage()">Submit</button>
-          </div>
+        <div class="stranded-okay__buttons">
+          <button mat-button [routerLink]="['/connect-contacts']">Cancel</button>
+          <button type="submit" mat-raised-button color="primary" (click)="sendMessage()">Submit</button>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
 </div>
