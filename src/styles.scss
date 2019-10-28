@@ -1,37 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import './styles/abstracts/variables';
+@import './styles/abstracts/mixins';
 
 @import './styles/base/base';
 @import './styles/base/typography';
 @import './styles/base/utilities';
 
-
-
-
-
-.user-message {
-  font-size: 1.6rem;
-  line-height: 1.7;
-}
-
-.helper-text {
-  font-size: 1.2rem;
-}
-
-mat-form-field.mat-form-field {
-  font-size: 1.6rem;
-}
-
-.search-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.search-box>* {
-  width: 100%;
-}
-
-.report-card {
-  max-width: 600px;
-  margin: auto;
-}
+@import './styles/layout/grid';
