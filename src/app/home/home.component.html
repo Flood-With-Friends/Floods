@@ -1,28 +1,44 @@
-<div class="container">
-  <div class="row home-section" routerLink="/route">
-    <button mat-fab color="primary"><i class="material-icons ">
-        directions
-      </i></button>
-    <h1 mat-headline class="home-header">Find a route</h1><br>
-    <p class="mat-body-1">Give us a destination and we’ll give you a route around potential flooding.
-    </p>
+<div class="row home">
+  <div class="row home__section mat-elevation-z2" routerLink="/route">
+    <div class="col-1-of-4">
+      <button class="mat-elevation-z1" mat-fab color="primary">
+        <mat-icon>
+          directions
+        </mat-icon>
+      </button></div>
+    <div class="col-3-of-4">
+      <h1 mat-headline class="home__section--header">Find a route</h1>
+      <p class="mat-body-1">Give us a destination and we’ll give you a route around potential flooding.
+      </p>
+    </div>
   </div>
-
-  <div class="row home-section" routerLink="/create-report">
-    <button mat-fab color="primary"><i class="material-icons">
-        warning
-      </i></button>
-    <h1 mat-headline class="home-header">Report flooding</h1><br>
-    <p class="mat-body-1">Help improve our ability to get your fellow New Orleanians through the flood.
-    </p>
+  <div class="row home__section mat-elevation-z2" routerLink="/create-report">
+    <div class="col-1-of-4">
+      <button class="mat-elevation-z1" mat-fab color="primary">
+        <mat-icon>
+          warning
+        </mat-icon>
+      </button>
+    </div>
+    <div class="col-3-of-4">
+      <h1 mat-headline class="home__section--header">Report flooding</h1>
+      <p class="mat-body-1">Help improve our ability to get your fellow New Orleanians through the flood.
+      </p>
+    </div>
   </div>
-  <div class="row home-section" routerLink="/connect-contacts">
-    <button mat-fab color="primary"><i class="material-icons">
-        message
-      </i></button>
-    <h1 mat-headline class="home-header">Contact friends</h1><br>
-    <p class="mat-body-1">Message your emergency contacts to tell them where you are or where you’re going.
-    </p>
+  <div class="row home__section mat-elevation-z2" routerLink="/connect-contacts">
+    <div class="col-1-of-4">
+      <button class="mat-elevation-z1" mat-fab color="primary">
+        <mat-icon>
+          message
+        </mat-icon>
+      </button>
+    </div>
+    <div class="col-3-of-4">
+      <h1 mat-headline class="home__section--header">Contact friends</h1>
+      <p class="mat-body-1">Message your emergency contacts to tell them where you are or where you’re going.
+      </p>
+    </div>
   </div>
 </div>
 

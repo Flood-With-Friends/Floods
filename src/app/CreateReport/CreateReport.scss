@@ -1,11 +1,25 @@
-// .report-card {
-//   max-width: 400px;
-//   margin: auto;
-// }
+.create-report {
+  display: block;
+  width: 90%;
 
-agm-map {
-  height: 35vh;
+  &__header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__map {
+    height: 35vh;
+  }
+
+  &__search-box {
+    margin-top: 2rem;
+
+    &--text {
+      width: 100%;
+    }
+  }
 }
+
 
 .inputfile {
   width: 0.1px;
@@ -21,7 +35,8 @@ agm-map {
   color: white;
   background-color: #0D47A1;
   display: inline-block;
-  padding: .6rem;
+  padding: 1rem;
+  border-radius: .3rem;
   text-transform: uppercase;
 }
 

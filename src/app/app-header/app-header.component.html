@@ -1,9 +1,10 @@
 <!--The mat-toolbar is our header. It is where the hanburger and the radar/rainfall buttons will go.-->
-<header>
+<header class="header__nav">
   <mat-toolbar class="header__nav mat-elevation-z4">
-    <a *ngIf="userId === 'null'" [href]="googleLoginUrl"><button class="header__nav header__nav-btn"
-        mat-stroked-button>LOGIN</button></a>
-    <button *ngIf="userId !== 'null'" mat-button [matMenuTriggerFor]="menu">
+    <!-- <a *ngIf="userId === 'null'" [href]="googleLoginUrl"><button class="header__nav header__nav-btn"
+        mat-stroked-button>LOGIN</button></a> -->
+    <!-- <button *ngIf="userId !== 'null'" mat-button [matMenuTriggerFor]="menu"> -->
+    <button mat-button [matMenuTriggerFor]="menu">
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu>
